@@ -1,4 +1,5 @@
 package com.example.individualprep.controller;
 
-class VectorControllerTest {
+public class VectorControllerTest {
+
 }
