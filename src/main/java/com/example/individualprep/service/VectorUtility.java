@@ -16,8 +16,15 @@ public class VectorUtility {
     }
 
     public double[] multiply(double[] v1, int x) {
-        // TODO: Implement me properly!
-        return new double[] { 0.0, 0.0, 0.0 };
+        if (v1 == null || v1.length != 3) {
+            throw new IllegalArgumentException("Vector must have exactly 3 elements");
+        }
+
+        return new double[] {
+                v1[0] * x,
+                v1[1] * x,
+                v1[2] * x
+        };
     }
     
     public double dotProduct(double[] v1, double[] v2) {
