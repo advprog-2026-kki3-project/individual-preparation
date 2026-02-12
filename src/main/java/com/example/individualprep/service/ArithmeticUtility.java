@@ -26,7 +26,22 @@ public class ArithmeticUtility {
     }
 
     public double exponent(double o1, int n) {
-        // TODO: Implement me properly!
-        return 0.0;
+        if (n < 0) {
+            throw new IllegalArgumentException("Exponent must be non-negative");
+        }
+
+        double result = 1.0;
+        double base = o1;
+        int exp = n;
+
+        while (exp > 0) {
+            if ((exp & 1) == 1) {   // if exp is odd
+                result *= base;
+            }
+            base *= base;
+            exp >>= 1;              // divide exp by 2
+        }
+
+        return result;
     }
 }
