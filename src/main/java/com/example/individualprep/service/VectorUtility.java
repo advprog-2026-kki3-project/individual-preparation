@@ -41,9 +41,12 @@ public class VectorUtility {
         // TODO: Implement me properly!
         return 0.0;
     }
-    
+
     public double norm(double[] v1) {
-        // TODO: Implement me properly!
-        return 0.0;
+        double sum = 0.0;
+        for (double value : v1) {
+            sum += value * value;
+        }
+        return Math.sqrt(sum);
     }
 }
