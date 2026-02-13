@@ -3,7 +3,7 @@ package com.example.individualprep.service;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-public class VectorUtilityTest {
+class VectorUtilityTest {
 
     private final VectorUtility service = new VectorUtility();
 
