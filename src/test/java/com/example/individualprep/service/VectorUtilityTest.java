@@ -55,6 +55,7 @@ class VectorUtilityTest {
         assertEquals("Vectors must be non-null and of the same dimension.", exception.getMessage());
     }
 
+    @Test
     void multiplyVectorNormally() {
         double[] result = vectorUtility.multiply(new double[]{1,2,3}, 2);
         assertArrayEquals(new double[]{2,4,6}, result);
